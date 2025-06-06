@@ -9,9 +9,9 @@
 
 [data-theme="dark"] {
   --primary: #f0f0f0;
-  --secondary: #f9bc60;
+  --secondary:rgba(15, 219, 234, 0.85);
   --bg: #121212;
-  --text: #f0f0f0;
+  --text:rgba(15, 219, 234, 0.85);
   --card-bg: #1e1e1e;
   --shadow: rgba(0, 0, 0, 0.3);
 }
@@ -133,20 +133,15 @@ h2::after {
   border-radius: 50px;
   text-decoration: none;
   font-weight: 500;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.btn-primary {
-  background: var(--primary);
-  color: var(--secondary);
-}
-
-.btn-secondary {
+  background: transparent;
   border: 2px solid var(--primary);
-  color: var(--text);
+  color: var(--primary);
+  transition: transform 0.3s, box-shadow 0.3s, background 0.3s, color 0.3s;
 }
 
 .btn-primary:hover, .btn-secondary:hover {
+  background: var(--primary);
+  color: var(--secondary);
   transform: translateY(-2px);
   box-shadow: 0 5px 15px var(--shadow);
 }

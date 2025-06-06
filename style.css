@@ -9,9 +9,9 @@
 
 [data-theme="dark"] {
   --primary: #f0f0f0;
-  --secondary: 
+  --secondary: #f9bc60;
   --bg: #121212;
-  --text: #eee;
+  --text: #f0f0f0;
   --card-bg: #1e1e1e;
   --shadow: rgba(0, 0, 0, 0.3);
 }
